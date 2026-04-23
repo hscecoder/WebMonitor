@@ -11,3 +11,5 @@ timestamp_utc,name,url,expected_status,actual_status,latency_ms,is_up,error
 2026-04-23T14:01:52.521471+00:00,Test Site,http://thesdsfsf.com/,200,0,54,0,URLError: <urlopen error [Errno -2] Name or service not known>
 2026-04-23T14:03:52.568533+00:00,Google,https://google.com,200,200,190,1,
 2026-04-23T14:03:52.583031+00:00,Test Site,http://thesdsfsf.com/,200,0,14,0,URLError: <urlopen error [Errno -2] Name or service not known>
+2026-04-23T15:27:55.784442+00:00,Google,https://google.com,200,200,329,1,
+2026-04-23T15:27:55.809677+00:00,Test Site,http://thesdsfsf.com/,200,0,25,0,URLError: <urlopen error [Errno -2] Name or service not known>
