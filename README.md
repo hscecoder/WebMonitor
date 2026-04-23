@@ -8,8 +8,7 @@ A lightweight DevOps project that checks website/API uptime on schedule, logs hi
 - Manual run support (`workflow_dispatch`)
 - Uptime history logging in CSV
 - Alerting on status change (Down and Recovered):
-  - Slack/Teams via webhook (recommended)
-  - Email via SMTP (optional)
+  - Slack/Teams via webhook
 - Daily uptime report generation
 - Basic CI tests for quality
 
