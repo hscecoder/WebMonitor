@@ -146,19 +146,15 @@ def state_change_messages(previous: Dict[str, bool], current: List[CheckResult])
     messages = []
     for result in current:
         prev = previous.get(result.name)
-        # On first run, still alert if target is down.
-        if prev is None and (not result.is_up):
+        # Always alert when target is down (exam/demo friendly behavior).
+        if not result.is_up:
             messages.append(
                 f"DOWN: {result.name} | {result.url} | latency={result.latency_ms}ms | error={result.error or 'N/A'}"
             )
             continue
-        if prev is None:
-            continue
-        if prev and not result.is_up:
-            messages.append(
-                f"DOWN: {result.name} | {result.url} | latency={result.latency_ms}ms | error={result.error or 'N/A'}"
-            )
-        elif (not prev) and result.is_up:
+
+        # Recovery alert only when previous state is known and was down.
+        if (prev is False) and result.is_up:
             messages.append(
                 f"RECOVERED: {result.name} | {result.url} | latency={result.latency_ms}ms"
             )
@@ -238,6 +234,9 @@ def main() -> int:
             print(webhook_error)
         if email_error:
             print(email_error)
+    else:
+        if not os.getenv("ALERT_WEBHOOK_URL") and not os.getenv("SMTP_HOST"):
+            print("No alert channel configured. Set ALERT_WEBHOOK_URL or SMTP_* secrets.")
 
     return 1 if down_count > 0 else 0
 
