@@ -197,3 +197,5 @@ timestamp_utc,name,url,expected_status,actual_status,latency_ms,is_up,error
 2026-04-28T09:40:26.537896+00:00,Github,http://github.com/,200,200,278,1,
 2026-04-28T11:26:06.828027+00:00,Google,https://google.com,200,200,228,1,
 2026-04-28T11:26:07.360427+00:00,Github,http://github.com/,200,200,532,1,
+2026-04-28T13:09:21.853703+00:00,Google,https://google.com,200,200,248,1,
+2026-04-28T13:09:22.045982+00:00,Github,http://github.com/,200,502,192,0,HTTPError: HTTP Error 502: Bad Gateway or Proxy Error
