@@ -1,18 +1,20 @@
 # Daily Uptime Report
 
-Generated (UTC): 2026-05-06T07:31:26.809539+00:00
+Generated (UTC): 2026-05-06T10:01:20.563566+00:00
 
 ## Last 24 Hours Summary
 
 | Service | Checks | Uptime % | Avg Latency (ms) | Last Status |
 |---|---:|---:|---:|---|
-| Github | 13 | 100.00 | 319 | UP |
-| Google | 13 | 100.00 | 194 | UP |
+| Github | 13 | 100.00 | 318 | UP |
+| Google | 13 | 92.31 | 213 | DOWN |
 
 ## Latest Raw Entries
 
 | Time (UTC) | Service | Status | Latency (ms) | Error |
 |---|---|---|---:|---|
+| 2026-05-06T10:01:20.421103+00:00 | Github | UP | 52 |  |
+| 2026-05-06T10:01:20.368759+00:00 | Google | DOWN | 407 | HTTPError: HTTP Error 429: Too Many Requests |
 | 2026-05-06T07:31:26.761002+00:00 | Github | UP | 106 |  |
 | 2026-05-06T07:31:26.654000+00:00 | Google | UP | 140 |  |
 | 2026-05-06T04:49:43.833274+00:00 | Github | UP | 529 |  |
@@ -21,5 +23,3 @@ Generated (UTC): 2026-05-06T07:31:26.809539+00:00
 | 2026-05-06T01:15:55.106001+00:00 | Google | UP | 255 |  |
 | 2026-05-05T23:30:34.976874+00:00 | Github | UP | 258 |  |
 | 2026-05-05T23:30:34.717947+00:00 | Google | UP | 186 |  |
-| 2026-05-05T22:35:37.506053+00:00 | Github | UP | 627 |  |
-| 2026-05-05T22:35:36.878788+00:00 | Google | UP | 228 |  |
