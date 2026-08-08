@@ -2725,3 +2725,5 @@ timestamp_utc,name,url,expected_status,actual_status,latency_ms,is_up,error
 2026-08-08T10:57:38.205823+00:00,Github,http://github.com/,200,200,48,1,
 2026-08-08T11:25:59.953063+00:00,Google,https://google.com,200,429,361,0,HTTPError: HTTP Error 429: Too Many Requests
 2026-08-08T11:26:00.046771+00:00,Github,http://github.com/,200,200,93,1,
+2026-08-08T11:51:48.676766+00:00,Google,https://google.com,200,200,161,1,
+2026-08-08T11:51:48.955028+00:00,Github,http://github.com/,200,200,278,1,
